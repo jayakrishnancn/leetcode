@@ -1,0 +1,7 @@
+{{
+  describe("Test suit", () => {
+  it("test case", () => {
+    expect(true).toEqual(true);
+  });
+});
+}}
