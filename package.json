@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "run": "ts-node",
-    "test": "jest ./src --watchAll"
+    "test": "jest ./src --watchAll",
+    "new": "cp ./templates/ts  ./src/-R "
   },
   "keywords": [],
   "author": "",
