@@ -13,4 +13,9 @@ describe("thousand-separator", () => {
   it("case 4", () => {
     expect(Default(1234567890)).toEqual("1.234.567.890");
   });
+  it("case 4", () => {
+    expect(Default(123456789000)).toEqual(
+      "123.456.789.000"
+    );
+  });
 });
