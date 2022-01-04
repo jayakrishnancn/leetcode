@@ -15,4 +15,4 @@ while [ -d $Directory ] ; do
 done
 
 cp ./templates/ts/. $Directory -R
-yarn jest $Directory --watch
+yarn jest $Directory --watch --verbose false
