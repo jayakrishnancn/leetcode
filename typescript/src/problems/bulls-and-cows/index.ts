@@ -33,9 +33,7 @@ function getHint(secret: string, guess: string): string {
       ACount++;
     } else {
       memo[secret[index]] =
-        memo[secret[index]] > 0
-          ? memo[secret[index]] + 1
-          : 1;
+        memo[secret[index]] > 0 ? memo[secret[index]] + 1 : 1;
     }
     index++;
   }

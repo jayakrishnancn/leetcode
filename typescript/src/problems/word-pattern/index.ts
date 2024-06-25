@@ -1,5 +1,5 @@
 function wordPattern(pattern: string, s: string): boolean {
-  let sArr = s.split(" ").filter(item => item.length > 0);
+  let sArr = s.split(' ').filter((item) => item.length > 0);
   let ptr = 0,
     memo = {};
 

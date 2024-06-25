@@ -1,9 +1,4 @@
-function nthUglyNumber(
-  n: number,
-  a: number,
-  b: number,
-  c: number
-): number {
+function nthUglyNumber(n: number, a: number, b: number, c: number): number {
   let nthNumber = a;
   let count = n;
   let i = a < b ? a : b;

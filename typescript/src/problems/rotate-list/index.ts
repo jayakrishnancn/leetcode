@@ -8,10 +8,7 @@ class ListNode {
   }
 }
 
-function rotateRight(
-  head: ListNode | null,
-  k: number
-): ListNode | null {
+function rotateRight(head: ListNode | null, k: number): ListNode | null {
   let newHead = head,
     prev = head,
     node = head,

@@ -1,9 +1,9 @@
 function addSpaces(s: string, spaces: number[]): string {
-  let res = "",
+  let res = '',
     j = 0;
   for (let i = 0; i < s.length; i++) {
     if (i === spaces[j]) {
-      res += " ";
+      res += ' ';
       j++;
     }
     res += s[i];

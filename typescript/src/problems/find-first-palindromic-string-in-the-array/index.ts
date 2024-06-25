@@ -1,5 +1,4 @@
-const isPalendrome = a =>
-  a.split("").reverse().join("") === a;
+const isPalendrome = (a) => a.split('').reverse().join('') === a;
 
 function firstPalindrome(words: string[]): string {
   for (let i of words) {
@@ -7,6 +6,6 @@ function firstPalindrome(words: string[]): string {
       return i;
     }
   }
-  return "";
+  return '';
 }
 export default firstPalindrome;

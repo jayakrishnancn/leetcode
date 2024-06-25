@@ -1,5 +1,5 @@
 const getAllAt = (s, n, i) => {
-  let str = "";
+  let str = '';
   while (i < s.length) {
     str += s[i];
     i += n + (n - 2);
@@ -37,10 +37,7 @@ function convert(s: string, n: number): string {
     }
   }
 
-  const str = strArr.reduce(
-    (a, b) => a + b.reduce((c, d) => c + d, ""),
-    ""
-  );
+  const str = strArr.reduce((a, b) => a + b.reduce((c, d) => c + d, ''), '');
   console.log(str);
   return str;
 }

@@ -8,8 +8,7 @@ function isValidSudoku(board: string[][]): boolean {
       if (!element) {
         continue;
       }
-      let box =
-        Math.floor(row / 3) * 3 + Math.floor(col / 3);
+      let box = Math.floor(row / 3) * 3 + Math.floor(col / 3);
 
       if (!visitedRows[row]) {
         visitedRows[row] = [];

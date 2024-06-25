@@ -8,7 +8,7 @@ function isH(n: number): boolean {
 
   let sumOfTheSquares = n
     .toString()
-    .split("")
+    .split('')
     .reduce((prev, curr) => {
       return prev + Math.pow(Number(curr), 2);
     }, 0);

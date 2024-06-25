@@ -1,4 +1,4 @@
-const fact = n => {
+const fact = (n) => {
   return (n * (n + 1)) / 2;
 };
 function getDescentPeriods(prices: number[]): number {

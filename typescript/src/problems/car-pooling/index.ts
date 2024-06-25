@@ -1,7 +1,4 @@
-function carPooling(
-  trips: number[][],
-  capacity: number
-): boolean {
+function carPooling(trips: number[][], capacity: number): boolean {
   let passengerCount: number[] = [];
 
   for (let i = 0; i < trips.length; i++) {

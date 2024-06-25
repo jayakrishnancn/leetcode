@@ -1,8 +1,4 @@
-const findMax = (
-  s: string,
-  l: number,
-  r: number
-): string => {
+const findMax = (s: string, l: number, r: number): string => {
   while (l >= 0 && r <= s.length - 1) {
     if (s[l] !== s[r]) {
       return s.substring(l + 1, r);

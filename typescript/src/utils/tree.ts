@@ -1,5 +1,5 @@
 export class TreeNode {
-  val: number ;
+  val: number;
   left: TreeNode | null;
   right: TreeNode | null;
   constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
@@ -16,7 +16,7 @@ export default class TreeUtil {
       return new TreeNode(
         tree[index] ?? 0,
         helper(2 * index + 1),
-        helper(2 * index + 2),
+        helper(2 * index + 2)
       );
     };
     return helper(0);

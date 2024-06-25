@@ -8,9 +8,7 @@ class ListNode {
   }
 }
 
-export default function swapPairs(
-  head: ListNode | null
-): ListNode | null {
+export default function swapPairs(head: ListNode | null): ListNode | null {
   let node1 = head,
     node2 = head?.next,
     prev = head,

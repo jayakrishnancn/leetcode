@@ -14,9 +14,7 @@ function mergeTwoLists(
 ): ListNode | null {
   if (!list1?.val) return list2;
   if (!list2?.val) return list1;
-  let head = new ListNode(
-    list1?.val < list2?.val ? list1?.val : list2?.val
-  );
+  let head = new ListNode(list1?.val < list2?.val ? list1?.val : list2?.val);
   if (list1?.val < list2?.val) {
     list1 = list1?.next;
   } else {

@@ -5,14 +5,14 @@ function isRobotBounded(inst: string): boolean {
     yd = 1;
 
   for (let i of inst) {
-    if (i === "G") {
+    if (i === 'G') {
       x += xd;
       y += yd;
     }
-    if (i === "L") {
+    if (i === 'L') {
       [xd, yd] = [-1 * yd, xd];
     }
-    if (i === "R") {
+    if (i === 'R') {
       [xd, yd] = [yd, -1 * xd];
     }
   }

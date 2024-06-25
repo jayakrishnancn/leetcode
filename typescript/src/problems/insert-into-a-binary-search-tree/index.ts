@@ -12,10 +12,7 @@
  * }
  */
 
-function insertIntoBST(
-  root: TreeNode | null,
-  val: number
-): TreeNode | null {
+function insertIntoBST(root: TreeNode | null, val: number): TreeNode | null {
   let newNode = new TreeNode(val);
   if (!root) {
     return newNode;

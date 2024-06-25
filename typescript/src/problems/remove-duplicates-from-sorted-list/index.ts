@@ -8,9 +8,7 @@ export class ListNode {
   }
 }
 
-function deleteDuplicates(
-  head: ListNode | null
-): ListNode | null {
+function deleteDuplicates(head: ListNode | null): ListNode | null {
   let node = head?.next;
   let prevVal = head?.val;
   let prev = head;

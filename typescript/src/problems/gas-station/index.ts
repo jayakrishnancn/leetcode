@@ -1,15 +1,6 @@
-function canCompleteCircuit(
-  gas: number[],
-  cost: number[]
-): number {
-  let totalGas = gas.reduce(
-    (sum, gasInStation) => sum + gasInStation,
-    0
-  );
-  let totalCost = cost.reduce(
-    (sum, constInStation) => sum + constInStation,
-    0
-  );
+function canCompleteCircuit(gas: number[], cost: number[]): number {
+  let totalGas = gas.reduce((sum, gasInStation) => sum + gasInStation, 0);
+  let totalCost = cost.reduce((sum, constInStation) => sum + constInStation, 0);
   if (totalCost > totalGas) {
     return -1;
   }

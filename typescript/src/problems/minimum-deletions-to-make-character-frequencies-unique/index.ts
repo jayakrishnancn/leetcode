@@ -11,7 +11,7 @@ function minDeletions(s: string): number {
   // [ 2 2 1]
   Object.values(memo)
     .sort((a, b) => Number(a) - Number(b))
-    .forEach(value => {
+    .forEach((value) => {
       console.log(values[value], value, minChange);
       if (!values[value]) {
         values[value] = true;
@@ -23,7 +23,7 @@ function minDeletions(s: string): number {
           values[val] = true;
           break;
         }
-        console.log(val, "val", minChange);
+        console.log(val, 'val', minChange);
         minChange++;
         val--;
       }

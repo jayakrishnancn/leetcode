@@ -10,8 +10,7 @@ function cherryPickup(grid: number[][]): number {
       return 0;
     }
     // if stored in cache return from dp state
-    if (memo[`${r1}${c1}${c2}`])
-      return memo[`${r1}${c1}${c2}`];
+    if (memo[`${r1}${c1}${c2}`]) return memo[`${r1}${c1}${c2}`];
 
     if (r1 == n - 1) {
       if (c1 == c2) return grid[r1][c1];

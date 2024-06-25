@@ -3,7 +3,7 @@
  * @param s
  */
 function lengthOfLastWord(s: string): number {
-  let arr = s.split(" ").filter(item => item.length > 0);
+  let arr = s.split(' ').filter((item) => item.length > 0);
 
   return arr.pop()?.length ?? 0;
 }

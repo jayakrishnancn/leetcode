@@ -1,5 +1,4 @@
-const isAlphaNum = (char: string) =>
-  char.match(/[a-zA-Z0-9]/g);
+const isAlphaNum = (char: string) => char.match(/[a-zA-Z0-9]/g);
 
 function isPalindrome(s: string): boolean {
   let left = 0,
