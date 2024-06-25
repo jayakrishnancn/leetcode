@@ -10,7 +10,7 @@ export class TreeNode {
 }
 
 export default class TreeUtil {
-  static createFromArray(tree: number[]): TreeNode | null {
+  static createFromArray(tree: (number | null)[]): TreeNode | null {
     const helper = (index: number): TreeNode | null => {
       if (index >= tree.length || tree[index] === null) return null;
       return new TreeNode(tree[index], helper(2 * index + 1), helper(2 * index + 2));

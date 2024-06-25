@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "run": "ts-node",
-    "test-all": "jest ./src --watchAll",
+    "test-all": "jest ./src/problems/ --watchAll",
     "test": "jest"
   },
   "keywords": [],
