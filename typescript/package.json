@@ -8,12 +8,10 @@
     "test": "jest",
     "pretty-fix": "prettier --loglevel=warn --write .",
     "pre-push": " jest --bail",
-    "prepare": "husky"
+    "prepare": "cd .. && husky typescript/.husky"
   },
- "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "lint-staged": {
+    "**/.{ts,js}": "prettier --write --ignore-unknown"
   },
   "keywords": [],
   "author": "",
