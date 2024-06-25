@@ -8,12 +8,11 @@
     "test": "jest",
     "pretty-fix": "prettier --loglevel=warn --write .",
     "pre-push": " jest --bail",
-    "precommit": "lint-staged"
+    "prepare": "husky"
   },
-  "husky": {
+ "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "post-commit": "git update-index --again"
+      "pre-commit": "lint-staged"
     }
   },
   "keywords": [],
