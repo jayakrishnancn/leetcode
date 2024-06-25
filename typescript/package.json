@@ -1,0 +1,38 @@
+{
+  "name": "leetcode",
+  "version": "2.0.0",
+  "description": "",
+  "scripts": {
+    "run": "ts-node",
+    "test-all": "jest ./src/problems/ --watchAll",
+    "test": "jest",
+    "pretty-fix": "prettier --loglevel=warn --write .",
+    "pre-push": " jest --bail",
+    "prepare": "cd .. && husky typescript/.husky"
+  },
+  "lint-staged": {
+    "**/*{.ts,.js,.json}": "cd typescript && pnpm run pretty-fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.24.7",
+    "@types/node": "^20.14.8",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/jest": "^29.5.12",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7"
+  }
+}
