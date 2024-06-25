@@ -13,6 +13,11 @@
   "lint-staged": {
     "**/.{ts,js}": "prettier --write --ignore-unknown"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
