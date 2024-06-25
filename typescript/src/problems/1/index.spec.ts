@@ -19,7 +19,6 @@ describe("Daily", () => {
     const input = [3, 3];
     const target = 6;
     const expectedOp = [0, 1];
-
     expect(Default(input, target)).toEqual(expect.arrayContaining(expectedOp));
   });
 });
