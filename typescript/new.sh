@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $# -eq 0 ]; then
-	echo "No arguments passed, ./new.sh <question_number> <daily_dir_name>"
+	echo "No arguments passed, ./new.sh <question_number>"
 	exit
 fi
 
@@ -14,12 +14,12 @@ while [ -d $Directory ]; do
 done
 
 mkdir -p $Directory
-cp -a ./src/templates/daily/. "$Directory"
+cp -a ./src/templates/. "$Directory"
 
 full_path="$(realpath "$Directory")"
 
 if [ -n "$2" ]; then
-	ln -s "$full_path" "$(pwd)/src/daily/$2"
+	ln -s "$full_path" "$(pwd)/src/$2"
 	echo "Symbolic link created from $full_path to src/$2"
 fi
 
