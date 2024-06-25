@@ -11,7 +11,7 @@
     "prepare": "cd .. && husky typescript/.husky"
   },
   "lint-staged": {
-    "**/*.{ts,js,.json}": "cd typescript && pnpm run pretty-fix"
+    "**/*{.ts,.js,.json}": "cd typescript && pnpm run pretty-fix"
   },
   "husky": {
     "hooks": {
