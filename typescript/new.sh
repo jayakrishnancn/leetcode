@@ -14,7 +14,7 @@ while [ -d $Directory ]; do
 done
 
 mkdir -p $Directory
-cp -a ./src/templates/. "$Directory"
+cp -a ./src/templates/daily/. "$Directory"
 
 full_path="$(realpath "$Directory")"
 
