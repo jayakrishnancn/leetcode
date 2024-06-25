@@ -1,5 +1,5 @@
 // daily-question
-// link : 
+// link :
 
 // import tree from '../../utils/tree'
 
