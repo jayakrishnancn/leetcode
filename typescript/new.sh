@@ -5,14 +5,15 @@ if [ $# -eq 0 ]; then
 	exit
 fi
 
-Directory="./src/$1"
+Directory="./src/daily/$1"
 
 while [ -d $Directory ]; do
 	echo "$Directory is a directory"
 	read -p "another name:" name
-	Directory="./src/$name"
+	Directory="./src/daily/$name"
 done
 
 mkdir -p $Directory
-cp -a ./templates/ts/. "$Directory"
+cp -a ./src/templates/daily/. "$Directory"
+
 pnpm jest $Directory --watch --verbose false
