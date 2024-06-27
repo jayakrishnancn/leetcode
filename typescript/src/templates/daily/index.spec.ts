@@ -1,5 +1,5 @@
 import Default from '.';
-// import tree from '../../utils/tree';
+// import { TreeNode } from '../../utils/tree';
 
 describe('Daily', () => {
   it('case 1', () => {

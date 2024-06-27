@@ -1,6 +1,6 @@
 // link: 
 
-// import tree from '../../utils/tree'
+// import { TreeNode } from '../../utils/tree';
 
 function fnName(args: any): any {
   return 0;
